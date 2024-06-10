@@ -1,0 +1,42 @@
+
+#id1{
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .main-image {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .nested-grid {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .item {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    }
+  
+  .image-row {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .image-row img {
+    width: 100%;
+  }
+  
+  .item img {
+    flex-shrink: 0;
+  }
+  
+  
